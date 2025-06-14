@@ -1,0 +1,16 @@
+{
+    "name": "Volume Slider for YT Music",
+    "description": "Shows a floating volume tooltip on YouTube Music when hovering or adjusting the slider.",
+    "version": "3.07",
+    "manifest_version": 3,
+    "permissions": ["scripting", "tabs"],
+    "content_scripts": [
+        {
+            "matches": ["https://music.youtube.com/*"],
+            "js": ["/scripts/volume-slider.js", "/scripts/remove-subscribe.js"]
+        }
+    ],
+"host_permissions": [
+  "https://music.youtube.com/*"
+]
+}
